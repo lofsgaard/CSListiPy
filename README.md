@@ -1,6 +1,6 @@
 # CSListiPy
 
-#### Video Demo:  xxx
+#### Video Demo:  https://www.youtube.com/watch?v=N_7Pq-C_anc
 #### Description: Creates a spotify playlist using data from a live setlist at setlist.fm. 
 #### This is my final project for Harvards CS50X
 
