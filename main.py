@@ -31,6 +31,3 @@ logging.info('Tracks fetched from Spotify API')
 # to add tracks from the above variable to the playlist
 add_tracks_playlist(auth(scope), playlist_id, spotify_tracks)
 logging.info('Tracks added from setlist to playlist!')
-
-
-

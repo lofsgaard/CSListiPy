@@ -38,8 +38,3 @@ def get_spotify_tracks(sp, tracks, artist):
 
 def add_tracks_playlist(sp, playlist_id, tracks):
     sp.playlist_add_items(playlist_id, tracks)
-
-
-
-
-
