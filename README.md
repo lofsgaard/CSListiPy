@@ -102,13 +102,25 @@ Once that is done it will prompt you for
 Output will look like this:
 
 ```
-Name of the playlist: Test Playlist
-Description of the playlist: Description of a playlist
-SetlistID from setlist.fm: 33bc8cd5
-29-Dec-22 13:50:44 - Tracks and artist fetched from Setlist
-29-Dec-22 13:50:45 - Playlist created
-29-Dec-22 13:50:49 - Tracks fetched from Spotify API
-29-Dec-22 13:50:49 - Tracks added from setlist to playlist!
+  ____ ____  _     _     _   _ ____
+ / ___/ ___|| |   (_)___| |_(_)  _ \ _   _
+| |   \___ \| |   | / __| __| | |_) | | | |
+| |___ ___) | |___| \__ \ |_| |  __/| |_| |
+ \____|____/|_____|_|___/\__|_|_|    \__, |
+                                     |___/
+
+SetlistID from setlist.fm: 4bbf0f46
+    _             _     _ _            _
+   / \   _ __ ___| |__ (_) |_ ___  ___| |_ ___
+  / _ \ | '__/ __| '_ \| | __/ _ \/ __| __/ __|
+ / ___ \| | | (__| | | | | ||  __/ (__| |_\__ \
+/_/   \_\_|  \___|_| |_|_|\__\___|\___|\__|___/
+
+
+08-Jan-23 02:16:40 - Tracks, artist and other relevant info fetched from Setlist
+08-Jan-23 02:16:41 - Playlist created
+08-Jan-23 02:16:42 - Tracks fetched from Spotify API
+08-Jan-23 02:16:43 - Tracks added from setlist to playlist!
 ```
 
 Now head over to spotify and enjoy. Please make an issue or ask if something is not working.
