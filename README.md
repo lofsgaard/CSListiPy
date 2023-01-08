@@ -87,27 +87,21 @@ spotify playlist.
 
 You need the `setlistID` located last in the URL. It looks like this `33bc8cd5`
 
-Next run the script:
-
-`python main.py`
-
 The first time this project is run, or if the API keys from spotify has expired
 a web browser will open and ask you to sign in.
 
-Once that is done it will prompt you for
-- `setlist.fm setlistID`
+Next run the script like this:
 
-Output will look like this:
+`python main.py -id setlistID`
+
+For example:
+
+`python main.py -id 23bc788b`
+
+Output will look like this. With fancy ASCII art with the band name:
 
 ```
-  ____ ____  _     _     _   _ ____
- / ___/ ___|| |   (_)___| |_(_)  _ \ _   _
-| |   \___ \| |   | / __| __| | |_) | | | |
-| |___ ___) | |___| \__ \ |_| |  __/| |_| |
- \____|____/|_____|_|___/\__|_|_|    \__, |
-                                     |___/
-
-SetlistID from setlist.fm: 4bbf0f46
+ ❯ python main.py -id 23bc788b
     _             _     _ _            _
    / \   _ __ ___| |__ (_) |_ ___  ___| |_ ___
   / _ \ | '__/ __| '_ \| | __/ _ \/ __| __/ __|
@@ -115,10 +109,17 @@ SetlistID from setlist.fm: 4bbf0f46
 /_/   \_\_|  \___|_| |_|_|\__\___|\___|\__|___/
 
 
-08-Jan-23 02:16:40 - Tracks, artist and other relevant info fetched from Setlist
-08-Jan-23 02:16:41 - Playlist created
-08-Jan-23 02:16:42 - Tracks fetched from Spotify API
-08-Jan-23 02:16:43 - Tracks added from setlist to playlist!
+08-Jan-23 10:14:58 - Tracks, artist and other relevant info fetched from Setlist
+08-Jan-23 10:14:58 - Playlist created
+08-Jan-23 10:15:02 - Tracks fetched from Spotify API
+08-Jan-23 10:15:02 - Tracks added from setlist to playlist!
+```
+
+If the setlistID is invalid you will get an error:
+
+```
+❯ python main.py -id awd
+Error 404, setlist not found
 ```
 
 Now head over to spotify and enjoy. Please make an issue or ask if something is not working.
