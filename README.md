@@ -95,8 +95,6 @@ The first time this project is run, or if the API keys from spotify has expired
 a web browser will open and ask you to sign in.
 
 Once that is done it will prompt you for
-- `Name of the playlist`
-- `Description of the playlist`
 - `setlist.fm setlistID`
 
 Output will look like this:
