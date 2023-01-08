@@ -21,7 +21,7 @@ artist, tracks, venue, city, country = get_setlist(setlist)
 print(f.renderText(f'{artist}'))
 logging.info('Tracks, artist and other relevant info fetched from Setlist')
 p_name = f'{artist} at {venue} in {city}, {country}'
-p_desc = f'Live setlist with {artist}'
+p_desc = f'Live setlist with {artist}. Created by https://github.com/lofsgaard/CSListiPy'
 
 # Creates a playlist using the function create_playlist(). Parameters using the above variables
 playlist = create_playlist(get_spotify_user(auth(scope)), p_name, p_desc, auth(scope))
