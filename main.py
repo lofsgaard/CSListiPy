@@ -1,6 +1,10 @@
 from spotify import get_spotify_user, auth, create_playlist, get_spotify_tracks, add_tracks_playlist
 from setlist import get_setlist
 import logging
+from pyfiglet import Figlet
+
+
+f = Figlet(font='standard')
 
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO, datefmt='%d-%b-%y %H:%M:%S')
 
@@ -8,13 +12,16 @@ logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO, date
 # Set auth scope, depends on what you want to do
 scope = 'playlist-modify-public, playlist-modify-private, playlist-read-private'
 
-p_name = input("Name of the playlist: ")
-p_desc = input("Description of the playlist: ")
+print(f.renderText('CSListiPy'))
+
 setlist = input("SetlistID from setlist.fm: ")
 
 # Runs an API call to setlist api using function get_setlist()
-artist, tracks = get_setlist(setlist)
-logging.info('Tracks and artist fetched from Setlist')
+artist, tracks, venue, city, country = get_setlist(setlist)
+print(f.renderText(f'{artist}'))
+logging.info('Tracks, artist and other relevant info fetched from Setlist')
+p_name = f'{artist} at {venue} in {city}, {country}'
+p_desc = f'Live setlist with {artist}'
 
 # Creates a playlist using the function create_playlist(). Parameters using the above variables
 playlist = create_playlist(get_spotify_user(auth(scope)), p_name, p_desc, auth(scope))

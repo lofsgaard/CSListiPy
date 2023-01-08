@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.9"
 spotipy = "^2.22.0"
 python-dotenv = "^0.21.0"
+pyfiglet = "^0.8.post1"
 
 
 [build-system]

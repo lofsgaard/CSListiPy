@@ -17,13 +17,16 @@ def get_setlist(setlist_id):
     response = requests.get(url, headers=headers)
     setlistdata = json.loads(response.text)
 
+    venue = setlistdata["venue"]["name"]
+    city = setlistdata["venue"]["city"]["name"]
+    country = setlistdata["venue"]["city"]["country"]["name"]
     artist = setlistdata["artist"]["name"]
     songs = []
     for set_item in setlistdata['sets']['set']:
         for song_item in set_item['song']:
             songs += [song_item['name']]
-    return artist, songs
+    return artist, songs, venue, city, country
 
 
 if __name__ == "__main__":
-    get_setlist('4bbf0f46')
+    print(get_setlist('23bc788b'))
