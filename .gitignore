@@ -9,3 +9,4 @@ __pycache__/*
 
 # pycharm idea
 .idea/*
+.vscode/launch.json
