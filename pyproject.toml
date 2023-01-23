@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-spotipy = "^2.22.0"
+spotipy = "^2.22.1"
 python-dotenv = "^0.21.0"
 pyfiglet = "^0.8.post1"
 
