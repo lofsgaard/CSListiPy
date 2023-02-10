@@ -133,15 +133,15 @@ files = [
 
 [[package]]
 name = "spotipy"
-version = "2.22.0"
+version = "2.22.1"
 description = "A light weight Python library for the Spotify Web API"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "spotipy-2.22.0-py2-none-any.whl", hash = "sha256:fb7b0e86b0bbb458ffd4dc53b4627e5bb95ea52e70887b9d23e0b2ecf11ede5e"},
-    {file = "spotipy-2.22.0-py3-none-any.whl", hash = "sha256:1d44c6da7f2012f4134d9b70f189ccef0fc924a7dec0a245750b3552abb0cec5"},
-    {file = "spotipy-2.22.0.tar.gz", hash = "sha256:b8b9ee9b16ce259e3dbadbc78b40f3760cdc4cc33db7d930252ec790912176d0"},
+    {file = "spotipy-2.22.1-py2-none-any.whl", hash = "sha256:aa023d8bc606053d95e8961f52293fdd8cd12ef4fad8f829e701bb3d61c48d76"},
+    {file = "spotipy-2.22.1-py3-none-any.whl", hash = "sha256:1dac15ac0aaf5246461a3cb0b3d837bc7af7b78597441289b500a5abac9fe9c4"},
+    {file = "spotipy-2.22.1.tar.gz", hash = "sha256:54680dbf243a2b0cff0e591e1d269692e94265273b52ab90994a661555c04ac7"},
 ]
 
 [package.dependencies]
@@ -174,4 +174,4 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "4131b4a91210067d399bff4e624212edcbbfff76775db85bcc40e3f06205cac6"
+content-hash = "de59f6c27d4401b4121220f5e86dd140cdb383162a6338dceaafee86323a3575"
